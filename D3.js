@@ -90,10 +90,47 @@ console.log("esercizio 7");
 let ex7firstNumber;
 let ex7secondNumber;
 let ex7thirdNumber;
+let majorNumber;
+let mediuNumber;
+let minumNumber
 
-ex7firstNumber=7;
-ex7secondNumber=82;
+
+ex7firstNumber=-20;
+ex7secondNumber=-15;
 ex7thirdNumber=-4;
+
+if(ex7firstNumber>=ex7secondNumber){
+  if(ex7secondNumber>=ex7thirdNumber){
+    majorNumber=ex7firstNumber;
+    mediuNumber=ex7secondNumber;
+    minumNumber=ex7thirdNumber;
+  }else if(ex7firstNumber>=ex7thirdNumber){
+    majorNumber=ex7firstNumber;
+    mediuNumber=ex7thirdNumber;
+    minumNumber=ex7secondNumber;
+  }
+}
+else{
+  if(ex7secondNumber>=ex7thirdNumber){
+    if(ex7firstNumber>=ex7thirdNumber){
+      majorNumber=ex7secondNumber;
+      mediuNumber=ex7firstNumber;
+      minumNumber=ex7thirdNumber;
+    }else {
+      mejornumber=ex7thirdNumber;
+      mediuNumber=ex7secondNumber;
+      minumNumber=ex7firstNumber;
+    }
+  }else{
+    majorNumber=ex7thirdNumber;
+    mediuNumber=ex7secondNumber;
+    minumNumber=ex7firstNumber;
+  }
+}
+
+
+console.log(majorNumber,mediuNumber,minumNumber);
+
 
 //da finire dopo
 
@@ -180,12 +217,15 @@ console.log(me.skills);
 */
 
 console.log("esercizio 14");
-const arr= [];
-arr.push[1,2,3,4,5,6,7,8,9,10];
+const arrayex4= [];
+arrayex4.push(1, 2, 3, 4, 5, 6, 7, 8, 9, 10);
+console.log(arrayex4);
 
 
 /* ESERCIZIO 15
   Scrivi del codice per sostituire l'ultimo elemento dell'array, ovvero il valore 10, con il valore 100.
 */
 
-/* SCRIVI QUI LA TUA RISPOSTA */
+console.log("esercizio 15");
+arrayex4[9]=100;
+console.log(arrayex4[9]);
